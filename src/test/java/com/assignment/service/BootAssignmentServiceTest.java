@@ -65,6 +65,7 @@ public class BootAssignmentServiceTest {
 	}
 
 	@Test
+	//added testcases
 	public void getTriangleTypeSumNegativeTest() throws InvalidTriangleSidesException, JSONException{
 		Mockito.when(environment.getProperty("Service.INVALID_TRIANGLE_SIDES")).thenReturn("Invalid triangle sides. Sides should be > 0 and should satisfy triangle property.");
 		e.expect(InvalidTriangleSidesException.class);
