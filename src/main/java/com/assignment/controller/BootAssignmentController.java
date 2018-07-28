@@ -27,7 +27,7 @@ public class BootAssignmentController {
 	
 	@Autowired
 	BootAssignmentService bootAssignmentService;
-
+	//mapping at /api/Fibonacci
 	@RequestMapping(value="/api/Fibonacci")
 	public ResponseEntity<Integer> getFibonacciNumber(@RequestParam("n") Integer inputNumber) throws InvalidInputNumberException{
 		logger.debug("getFibonacciNumber -- START inputNumber:"+inputNumber);
